@@ -1,0 +1,9 @@
+train.csv
+test.csv
+
+.DS_Store
+.ipynb_checkpoints
+.test_10.csv.icloud
+.train 2.csv.icloud
+.train_10.csv.icloud
+__pycache__
