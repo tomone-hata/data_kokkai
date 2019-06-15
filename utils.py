@@ -93,6 +93,7 @@ def create_chunk_dataset(df, chunk_size=5):
     chunk_mean = chunk_size // 2
     df_len = len(df)
     #先頭のラベルをdfと合わせるために先頭にchunk_meanの数だけ末尾のindexの要素を加える
+    #末尾も同様に先頭のindexを加える
     texts = [texts[idx] for idx in range(chunk_mean*(-1), 0)] + \
             texts + \
             [texts[idx] for idx in range(0, chunk_mean+1)]
